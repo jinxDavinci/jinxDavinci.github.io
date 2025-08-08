@@ -39,3 +39,4 @@ public class ReportCard {
 	    System.out.println(getLetterCard(68));
          }
 }
+
