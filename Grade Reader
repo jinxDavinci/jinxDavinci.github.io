@@ -1,0 +1,41 @@
+public class ReportCard {
+	public static String 
+	getLetterCard (int grade) {
+	  if (grade >= 95 && grade <= 100) 
+	  { 
+	  return "A";
+	  } else if (grade >= 89 && grade <= 94)
+	  { 
+	  return "B";
+	  } else if (grade >= 83 && grade <= 88)
+	  {
+	  return "C";
+	  } else if (grade >= 77 && grade <= 82)
+	  {
+	  return "D";
+	  } else if  (grade >= 75 && grade <= 76)
+	  { 
+	  return "E"; 
+	  } else if (grade >= 0 && grade <= 74)
+	  {
+	  return "Failed";
+	  }
+	  return "Invalid grade";
+	}
+
+	
+           public static void main(String [] args)
+         {         
+	  System.out.println(getLetterCard(96));
+	
+	    System.out.println(getLetterCard(82));
+	    
+	    System.out.println(getLetterCard(75));
+	    
+	    System.out.println(getLetterCard(99));
+	    
+	    System.out.println(getLetterCard(0));
+	    
+	    System.out.println(getLetterCard(68));
+         }
+}
